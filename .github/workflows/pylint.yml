@@ -3,9 +3,15 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'factorial.py'
+      - 'lint_test.py'
   pull_request:
     branches:
       - main
+    paths:
+      - 'factorial.py'
+      - 'lint_test.py'
 jobs:
   build:
     runs-on: ubuntu-latest
